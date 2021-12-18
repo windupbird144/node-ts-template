@@ -1,0 +1,23 @@
+{
+  "name": "@somescope/someapplication",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "start" : "node dist/main/index.js",
+    "build" : "tsc",
+    "pretest": "npm run build",
+    "test": "npx tap dist/test/* --reporter=spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^17.0.0",
+    "@types/tap": "^15.0.5",
+    "tap": "^15.1.5",
+    "typescript": "^4.5.4"
+  }
+}
